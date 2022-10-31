@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {FC} from 'react';
+import {Route, Routes} from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import './app.modules.scss';
+import HomePage from "./pages/home.page/home.page";
+import JobsPage from "./pages/jobs.page/jobs.page";
+import NotFoundPage from "./pages/not.found.page/not.found.page";
+import JobDetailsPage from "./pages/job.details.page/job.details.page";
+
+const App:FC = () => {
+    return (
+        <div>
+            <Routes>
+                <Route path={'/'} element={<HomePage/>}>
+                    <Route path={'/jobs'} element={<JobsPage/>}/>
+                    <Route path={'/jobs/details/:id'} element={<JobDetailsPage/>}/>
+                    <Route path={'*'} element={<NotFoundPage/>}/>
+                </Route>
+            </Routes>
+        </div>
+    );
+};
 
 export default App;

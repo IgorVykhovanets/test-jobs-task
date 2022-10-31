@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
+
+.job-container{
+  display: flex;
+  height: 120px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  padding: 24px 16px;
+  box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.08), 0 2px 1px -1px rgba(0, 0, 0, 0.04), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  margin: 10px 100px;
+  background: rgba(255, 255, 255, 0.85);
+  animation: job-block 3s 1;
+  @keyframes job-block {
+    0%{
+      margin-top: 1000px;
+    }
+  }
+  > div {
+    > img{
+      height: 85px;
+      width: 85px;
+      border-radius: 50%;
+    }
+  }
+  .description-job-container{
+    padding-right: 370px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    > h1{
+      font-size: 20px;
+      letter-spacing: -0.625px;
+      font-family: 'Exo', sans-serif;
+      font-weight: bold;
+      padding-top: 10px;
+      cursor: pointer;
+      width: 715px;
+      > a {
+        text-decoration: none;
+        color: #3A4562;
+      }
+    }
+    h2{
+      color: rgba(135, 141, 157, 0.8);
+      font-family: 'Exo', sans-serif;
+      font-size: 14px;
+    }
+    h3{
+      min-height: 30px;
+      display: flex;
+      align-items: center;
+      color: rgba(135, 141, 157, 0.8);
+      letter-spacing: 0.23619px;
+      font-size: 14px;
+      position: relative;
+      right: 4px;
+    }
+  }
+  .additional-info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    > div{
+      > h3{
+        font-size: 14px;
+        font-family: 'Exo', sans-serif;
+        color: rgba(135, 141, 157, 0.85);
+      }
+    }
+    .star-block{
+      position: relative;
+      right: 180px;
+    }
+  }
+}
