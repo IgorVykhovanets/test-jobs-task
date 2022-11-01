@@ -41,3 +41,18 @@
     font-size: 34px;
   }
 }
+
+@media screen and (max-width: 414px) {
+  .nav-links-menu{
+    > a{
+      font-size: 16px;
+    }
+    a:hover{
+      font-size: 18px;
+    }
+    a:active{
+      transition: 1s;
+      font-size: 18px;
+    }
+  }
+}

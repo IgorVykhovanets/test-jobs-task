@@ -98,3 +98,52 @@
     }
   }
 }
+
+@media screen and (max-width: 414px) {
+  .job-container{
+    width: 85%;
+    margin: 5px auto;
+    > .description-job-container{
+      padding-right: 0;
+      > h1{
+        margin-left: 15px;
+        font-size: 16px;
+        width: 250px;
+      }
+      h2{
+        font-size: 12px;
+        margin-left: 15px;
+      }
+      h3{
+        font-size: 12px;
+        margin-left: 15px;
+        margin-top: 5px;
+      }
+    }
+    .additional-info-container{
+      position: relative;
+      right: 95px;
+      > .star-block{
+        display: none;
+      }
+      .btn-add-jobs{
+        position: relative;
+        right: 8px;
+        top: 76px;
+        > button{
+          height: 20px;
+          width: 70px;
+        }
+      }
+      div {
+        > h3{
+          position: relative;
+          font-size: 10px;
+          bottom: 77px;
+          right: -10px;
+          width: 100px;
+        }
+      }
+    }
+  }
+}

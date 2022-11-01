@@ -342,3 +342,88 @@
     }
   }
 }
+
+@media screen and (max-width: 414px){
+  .details-container{
+    flex-direction: column;
+    > {
+      .left-details-job-container{
+        width: 95%;
+        margin: 0 auto;
+        > .header-details-container{
+          .btn-header-container{
+            position: relative;
+            top: 44px;
+            right: 160px;
+          }
+        }
+        .btn-container{
+          display: none;
+        }
+        .title-job-container{
+          flex-direction: column;
+          > .zp-container{
+            flex-direction: column-reverse;
+            position: relative;
+            left: 230px;
+            width: 150px;
+          }
+        }
+        .date-job-container{
+          position: relative;
+          bottom: 35px;
+        }
+        .description-job-container{
+          > ul{
+            position: relative;
+            left: 22px;
+            width: 375px;
+          }
+        }
+        .img-info-container{
+          position: relative;
+          bottom: 390px;
+          > div{
+            > img{
+              width: 30%;
+            }
+          }
+        }
+        .additional-info-container{
+          position: relative;
+          top: 155px;
+          > .time-info-container{
+            > div{
+              > button{
+                width: 30%;
+              }
+            }
+          }
+          .benefits-info-container{
+            > div{
+              display: flex;
+            }
+          }
+        }
+        .btn-footer-container{
+          display: none;
+        }
+      }
+      .right-details-job-container{
+        position: relative;
+        bottom: 150px;
+        width: 385px;
+        margin: 0 auto;
+        > img{
+          width: 385px;
+        }
+        .img-info-container{
+          position: relative;
+          bottom: 400px;
+          left: 54px;
+          width: 300px;
+        }
+      }
+    }
+  }
+}

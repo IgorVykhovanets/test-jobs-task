@@ -16,7 +16,10 @@ const LikeJobsPage = () => {
 
     return (
         <div>
-            {likeJobsData && likeJobsData.map(job => <Job job={job}/>)}
+            {
+                //@ts-ignore
+                likeJobsData && likeJobsData.map(job => <Job key={Math.random() * 10000} job={job}/>)
+            }
         </div>
     );
 };
