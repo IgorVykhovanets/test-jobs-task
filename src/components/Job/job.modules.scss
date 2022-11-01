@@ -38,6 +38,11 @@
       > a {
         text-decoration: none;
         color: #3A4562;
+        transition: 1s;
+      }
+      a:hover{
+        color: rgba(75, 87, 128, 0.65);
+        transition: 1s;
       }
     }
     h2{
@@ -60,7 +65,27 @@
     display: flex;
     flex-direction: column;
     align-items: end;
-    > div{
+    >
+    .btn-add-jobs{
+      > button{
+        height: 30px;
+        width: 100px;
+        border: 1px solid #384564;
+        border-radius: 8px;
+        background: #384564;
+        color: white;
+        font-weight: bold;
+        font-size: 12px;
+        transition: 1s;
+        cursor: pointer;
+      }
+      button:hover{
+        transition: 1s;
+        letter-spacing: 0.5px;
+        color: rgba(255, 255, 255, 0.75);
+      }
+    }
+    div{
       > h3{
         font-size: 14px;
         font-family: 'Exo', sans-serif;

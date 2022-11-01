@@ -1,6 +1,8 @@
 import React, {FC} from 'react';
-import JobDetails from "../../components/JobDetails/JobDetails";
 import {useLocation} from "react-router-dom";
+
+import JobDetails from "../../components/JobDetails/JobDetails";
+
 
 const JobDetailsPage:FC = () => {
 
@@ -8,7 +10,7 @@ const JobDetailsPage:FC = () => {
 
     return (
         <div>
-            <JobDetails jobDetails={state}/>
+            {state && <JobDetails jobDetails={state}/>}
         </div>
     );
 };

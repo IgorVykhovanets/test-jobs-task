@@ -1,0 +1,344 @@
+.details-container {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+
+  > .left-details-job-container {
+    width: 35%;
+
+    > .header-details-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(58, 69, 98, 0.3);
+
+      > h1 {
+        margin: 0 0 9px 0;
+        font-size: 28px;
+        line-height: 34px;
+        letter-spacing: 0.413333px;
+        color: #3A4562;
+        font-family: 'Exo', sans-serif;
+        font-weight: bold;
+      }
+
+      .btn-header-container {
+        display: flex;
+        gap: 35px;
+
+        > div {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 15px;
+          line-height: 24px;
+          letter-spacing: -0.5625px;
+          color: #3A4562;
+          font-family: 'Exo', sans-serif;
+        }
+      }
+    }
+
+    .btn-container {
+      margin-top: 40px;
+
+      > button {
+        border: none;
+        height: 50px;
+        width: 120px;
+        cursor: pointer;
+        background: #384564;
+        border-radius: 8px;
+        color: white;
+        transition: 1s;
+        font-weight: bold;
+      }
+
+      button:hover {
+        color: rgba(0, 0, 0, 0.9);
+        transition: 1s;
+      }
+    }
+
+    .title-job-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+
+      > div {
+        > h1 {
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 30px;
+          letter-spacing: -0.75px;
+          color: #3A4562;
+          font-family: 'Exo', sans-serif;
+          width: 350px;
+          text-align: justify;
+        }
+      }
+
+      .zp-container {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+
+        > h2 {
+          margin: 0 0 2px 0;
+          font-size: 20px;
+          line-height: 25px;
+          letter-spacing: -0.625px;
+          color: #3A4562;
+          font-weight: bold;
+          font-family: 'Exo', sans-serif;
+        }
+
+        span {
+          font-family: 'Exo', sans-serif;
+          font-size: 14px;
+          line-height: 24px;
+          letter-spacing: -0.5625px;
+          color: #3A4562;
+        }
+      }
+    }
+
+    .date-job-container {
+      > span {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.5625px;
+        color: rgba(56, 65, 93, 0.355988);
+        font-family: 'Exo', sans-serif;
+      }
+    }
+
+    .description-job-container {
+      > p {
+        font-family: 'Exo', sans-serif;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: -0.5625px;
+        color: #3A4562;
+        text-align: justify;
+      }
+
+      h2 {
+        font-family: 'Exo', sans-serif;
+        font-size: 22px;
+        line-height: 24px;
+        letter-spacing: -0.5625px;
+        color: #3A4562;
+        font-weight: bold;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+
+        > li {
+          font-family: 'Exo', sans-serif;
+          list-style: square;
+          color: rgb(56, 69, 100);
+          font-size: 18px;
+          line-height: 24px;
+          letter-spacing: -0.5625px;
+        }
+      }
+    }
+
+    .additional-info-container {
+      margin-top: 80px;
+
+      > .add-info-title-container {
+        border-bottom: 1px solid rgba(58, 69, 98, 0.3);
+
+        > h2 {
+          font-family: 'Exo', sans-serif;
+          font-weight: bold;
+          font-size: 28px;
+          line-height: 34px;
+          letter-spacing: 0.413333px;
+          color: #3A4562;
+          margin: 0 0 8px 0;
+        }
+      }
+
+      .time-info-container {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        > span {
+          font-family: 'Exo', sans-serif;
+          font-size: 18px;
+          line-height: 24px;
+          letter-spacing: -0.5625px;
+          color: #3A4562;
+        }
+
+        div {
+          > button {
+            width: 31%;
+            margin: 0 5px;
+            height: 50px;
+            background: rgba(161, 177, 219, 0.317343);
+            border: 1px solid rgba(85, 105, 158, 0.3);
+            border-radius: 8px;
+            font-weight: bold;
+            font-family: 'Exo', sans-serif;
+            color: #384564;
+          }
+        }
+      }
+      .benefits-info-container{
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        > span{
+          font-family: 'Exo', sans-serif;
+          font-size: 18px;
+          line-height: 24px;
+          letter-spacing: -0.5625px;
+          color: #3A4562;
+        }
+        div {
+          > button {
+            width: 31%;
+            margin: 0 5px;
+            height: 50px;
+            background: rgba(255, 207, 0, 0.35);
+            border: 1px solid rgba(255, 207, 0, 0.85);
+            border-radius: 8px;
+            font-weight: bold;
+            font-family: 'Exo', sans-serif;
+            color: #988B49;
+          }
+        }
+      }
+    }
+    .img-info-container{
+      margin-top: 85px;
+      > .img-title-container {
+        border-bottom: 1px solid rgba(58, 69, 98, 0.3);
+        > h2{
+          font-family: 'Exo', sans-serif;
+          font-weight: bold;
+          font-size: 28px;
+          line-height: 34px;
+          letter-spacing: 0.413333px;
+          color: #3A4562;
+          margin: 0 0 8px 0;
+        }
+      }
+      div {
+        margin-top: 15px;
+        > img{
+          height: 90px;
+          width: 28%;
+          margin: 0 5px;
+          border-radius: 10px;
+        }
+      }
+    }
+    .btn-footer-container{
+      margin-top: 85px;
+      > a {
+        text-decoration: none;
+        > button{
+          width: 215px;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          background: rgba(56, 69, 100, 0.2);
+          mix-blend-mode: normal;
+          border-radius: 8px;
+          border: none;
+          font-weight: bold;
+          color: #3A4562;
+          margin-bottom: 100px;
+          transition: 1s;
+        }
+        button:hover{
+          transition: 1s;
+          background: rgba(56, 69, 100, 0.5);
+          letter-spacing: 0.2px;
+        }
+      }
+    }
+  }
+
+  .right-details-job-container {
+    height: 405px;
+    width: 402px;
+    background: #2A3047;
+    border-radius: 10px;
+
+    > img {
+      height: 400px;
+      width: 402px;
+      border-radius: 10px;
+    }
+
+    .img-info-container {
+      position: relative;
+      bottom: 395px;
+      left: 100px;
+
+      > div {
+        > h2 {
+          letter-spacing: -0.625px;
+          color: #E7EAF0;
+          font-size: 24px;
+          line-height: 25px;
+          font-weight: bold;
+          font-family: 'Exo', sans-serif;
+        }
+      }
+
+      .img-location-container {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        position: relative;
+        bottom: 18px;
+
+        > h3 {
+          letter-spacing: -0.5625px;
+          color: #E8EBF3;
+          font-size: 14px;
+          font-family: 'Exo', sans-serif;
+        }
+
+        span {
+          color: #D8D8D8;
+        }
+      }
+
+      div {
+        > h3 {
+          letter-spacing: -0.5625px;
+          color: #E8EBF3;
+          font-size: 14px;
+          font-family: 'Exo', sans-serif;
+        }
+      }
+
+      .contact-container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        bottom: 20px;
+
+        > h3 {
+          margin: 0;
+          padding: 0;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+}

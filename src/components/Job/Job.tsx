@@ -3,10 +3,14 @@ import {IJobs} from "../../interfaces/jobs.interface/jobs.interface";
 
 import './job.modules.scss';
 import {Link} from "react-router-dom";
+import {useAppDispatch} from "../../hooks/redux.hooks";
+import {addLikeJobs} from "../../store/slices/jobs.slice";
 
 const Job: FC<{ job: IJobs; }> = ({job}) => {
 
     const {name, title, pictures, address, id} = job;
+
+    const dispatch = useAppDispatch();
 
     return (
         <div className={'job-container'}>
@@ -24,10 +28,12 @@ const Job: FC<{ job: IJobs; }> = ({job}) => {
                 </h3>
             </div>
             <div className={'additional-info-container'}>
-                <div>
-                    <span className="material-symbols-outlined">
-                        bookmark
-                    </span></div>
+                <div className={'btn-add-jobs'}>
+                    <button onClick={() => {
+                        //@ts-ignore
+                        dispatch(addLikeJobs(job))
+                    }}>Like Jobs</button>
+                </div>
                 <div className={'star-block'}>
                     <span className="material-symbols-outlined">
                         star

@@ -5,17 +5,18 @@
   justify-content: space-around;
   min-height: 80px;
   align-items: center;
-  background: rgba(0, 0, 0, 0.85);
+  background: #2A3047;
   margin-bottom: 30px;
+  border-bottom: 1px solid white;
   > a{
     text-decoration: none;
-    font-size: 28px;
+    font-size: 26px;
     font-family: 'Manrope', sans-serif;
     font-weight: bold;
     letter-spacing: 5px;
     color: white;
     transition: 1s;
-    animation: nav-link-menu 3s 1;
+    animation: nav-link-menu 4s 1;
   }
   @keyframes nav-link-menu {
     0%{
@@ -31,7 +32,7 @@
     }
   }
   a.active{
-    color: rgba(255, 0, 0, 0.85);
+    color: rgba(132, 0, 255, 0.8);
     transition: 1s;
     font-size: 34px;
   }

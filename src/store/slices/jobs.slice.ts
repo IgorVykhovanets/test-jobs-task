@@ -14,10 +14,12 @@ export const getAllJobsThunk = createAsyncThunk(
 
 interface IState {
     jobs: IJobs[] | null;
+    likeJobs : IJobs[]
 }
 
 const initialState: IState = {
     jobs: null,
+    likeJobs: []
 };
 
 const jobsSlice = createSlice({
@@ -26,10 +28,16 @@ const jobsSlice = createSlice({
     reducers: {
         getAllJobs: (state, action: PayloadAction<IJobs[]>) => {
             state.jobs = action.payload;
+        },
+        addLikeJobs: (state, action:PayloadAction<IJobs[]>) => {
+            //@ts-ignore
+            state.likeJobs.push(action.payload);
+            localStorage.setItem('jobs', JSON.stringify(state.likeJobs));
+            alert('Successfully !')
         }
     }
 });
 
-const {getAllJobs} = jobsSlice.actions;
+export const {getAllJobs, addLikeJobs} = jobsSlice.actions;
 
 export const jobsReducer = jobsSlice.reducer;

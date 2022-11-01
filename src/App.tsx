@@ -6,6 +6,7 @@ import HomePage from "./pages/home.page/home.page";
 import JobsPage from "./pages/jobs.page/jobs.page";
 import NotFoundPage from "./pages/not.found.page/not.found.page";
 import JobDetailsPage from "./pages/job.details.page/job.details.page";
+import LikeJobsPage from "./pages/like.jobs.page/like.jobs.page";
 
 const App:FC = () => {
     return (
@@ -14,6 +15,7 @@ const App:FC = () => {
                 <Route path={'/'} element={<HomePage/>}>
                     <Route path={'/jobs'} element={<JobsPage/>}/>
                     <Route path={'/jobs/details/:id'} element={<JobDetailsPage/>}/>
+                    <Route path={'/jobs/like'} element={<LikeJobsPage/>}/>
                     <Route path={'*'} element={<NotFoundPage/>}/>
                 </Route>
             </Routes>

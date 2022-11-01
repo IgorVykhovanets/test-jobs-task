@@ -8,6 +8,7 @@ const Layout:FC = () => {
         <div className={'nav-links-menu'}>
             <NavLink to={'/'}>Home</NavLink>
             <NavLink to={'/jobs'}>Jobs</NavLink>
+            <NavLink to={'/jobs/like'}>Like Jobs</NavLink>
         </div>
     );
 };
