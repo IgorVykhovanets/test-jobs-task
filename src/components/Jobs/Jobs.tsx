@@ -1,6 +1,6 @@
 import React, {FC, useEffect} from 'react';
-import {useAppDispatch, useAppSelector} from "../../hooks/redux.hooks";
 
+import {useAppDispatch, useAppSelector} from "../../hooks/redux.hooks";
 import {getAllJobsThunk} from "../../store/slices/jobs.slice";
 import Job from "../Job/Job";
 

@@ -1,8 +1,9 @@
 import React, {FC} from 'react';
+import {Link} from "react-router-dom";
 
-import './details.modules.scss'
 import {IJobs} from "../../interfaces/jobs.interface/jobs.interface";
 
+import './details.modules.scss'
 //@ts-ignore
 import imgMap from '../../images/Map.png'
 //@ts-ignore
@@ -11,7 +12,6 @@ import imgJob1 from '../../images/Bitmap.png'
 import imgJob2 from '../../images/Bitmap (1).png'
 //@ts-ignore
 import imgJob3 from '../../images/Bitmap (2).png'
-import {Link} from "react-router-dom";
 
 const JobDetails: FC<{ jobDetails: IJobs; }> = ({jobDetails: {name, address, email, phone, title, description}}) => {
     return (

@@ -1,8 +1,9 @@
 import React, {FC} from 'react';
+import {Link} from "react-router-dom";
+
 import {IJobs} from "../../interfaces/jobs.interface/jobs.interface";
 
 import './job.modules.scss';
-import {Link} from "react-router-dom";
 import {useAppDispatch} from "../../hooks/redux.hooks";
 import {addLikeJobs} from "../../store/slices/jobs.slice";
 

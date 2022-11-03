@@ -1,0 +1,31 @@
+.error-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 32px;
+  margin: 250px 0 0;
+  font-family: 'Exo', sans-serif;
+  animation: block-error 3s 1;
+  @keyframes block-error {
+    0%{
+      font-size: 0;
+      letter-spacing: 20px;
+    }
+  }
+  > .smile-error-container{
+    margin-left: 20px;
+    animation: smile-error 3s 1;
+  }
+  @keyframes smile-error {
+    0%{
+      font-size: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 414px){
+  .error-container{
+    font-size: 28px;
+  }
+}

@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
-import {useAppSelector} from "../../hooks/redux.hooks";
+
 import Job from "../../components/Job/Job";
+import {useAppSelector} from "../../hooks/redux.hooks";
 
 const LikeJobsPage = () => {
 

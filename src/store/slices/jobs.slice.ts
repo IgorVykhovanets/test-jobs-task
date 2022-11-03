@@ -30,7 +30,7 @@ const jobsSlice = createSlice({
             state.jobs = action.payload;
         },
         addLikeJobs: (state, action:PayloadAction<IJobs[]>) => {
-            //@ts-ignore
+            // @ts-ignore
             state.likeJobs.push(action.payload);
             localStorage.setItem('jobs', JSON.stringify(state.likeJobs));
             alert('Successfully !')
